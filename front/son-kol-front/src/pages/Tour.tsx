@@ -141,7 +141,7 @@ const Tour: React.FC = () => {
           </section>
           <section
             ref={aside}
-            className="relative flex-[0_1_405px] dt:max-w-[660px] dt:mx-auto dt:text-center"
+            className="relative flex-[0_0_405px] dt:max-w-[660px] dt:mx-auto dt:text-center"
           >
             <div
               className={`max-w-[405px] ${

@@ -47,22 +47,14 @@ const Card: React.FC<IReview> = ({ name, stars, text, photos, date }) => {
               <img
                 src={`${API_URL}${image}`}
                 alt="review"
-                className="w-full h-full"
+                className="mx-auto h-full object-contain max-h-[305px]"
               />
             </SwiperSlide>
           )
         )}
       </Swiper>
       <span className="block text-end text-[14px] leading-[16px] text-[#707070]">
-        {
-          months[
-            +(date.month + "")
-              .split("")
-              .filter((letter) => letter !== "0")
-              .join("")
-          ]
-        }{" "}
-        {date.day}, {date.year}
+        {months[date.month - 1]} {date.day}, {date.year}
       </span>
     </div>
   );

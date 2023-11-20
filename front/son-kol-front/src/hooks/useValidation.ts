@@ -59,7 +59,7 @@ export const useValidation = (value: string, validations: IValidations) => {
         case "confirmTo":
           if (value !== validations[validation]) {
             setConfirmError(true);
-            setErrorMsg("Incorrect confirmation");
+            setErrorMsg("Incorrect password confirmation!");
           } else {
             setConfirmError(false);
           }

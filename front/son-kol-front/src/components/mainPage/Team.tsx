@@ -109,8 +109,8 @@ const Team: React.FC = () => {
           // @ts-ignore
           breakpoints={sliderBreakPoints}
         >
-          {(team.length > 3 ? team : [...team, ...team]).map((person) => (
-            <SwiperSlide className="lt:w-[450px] slt:w-[340px] mbl:w-[280px]">
+          {(team.length > 3 ? team : [...team, ...team]).map((person, key) => (
+            <SwiperSlide key={key} className="lt:w-[450px] slt:w-[340px] mbl:w-[280px]">
               <div
                 className="
                     relative pb-[21px] px-[24px] mx-auto w-[405px] h-[516px] flex flex-col justify-end bg-no-repeat bg-center bg-cover shadow-[inset_0_0_100px_2px_rgba(0,_0,_0,_0.7)] rounded-[8px] text-white

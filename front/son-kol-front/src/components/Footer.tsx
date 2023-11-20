@@ -23,23 +23,59 @@ const Footer: React.FC = () => {
           </span>
           <ul className="flex items-center gap-[30px]">
             <li>
-              <a href="" target="_blank" rel="noreferrer">
-                <Icon className="w-[40px] h-[40px]" src={whatsapp} hoverSrc={whatsappHover} alt="whatsapp" />
+              <a
+                href="https://api.whatsapp.com/send?phone=996706990087"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Icon
+                  className="w-[40px] h-[40px]"
+                  src={whatsapp}
+                  hoverSrc={whatsappHover}
+                  alt="whatsapp"
+                />
               </a>
             </li>
             <li>
-              <a href="" target="_blank" rel="noreferrer">
-                <Icon className="w-[40px] h-[40px]"  src={tripAdvisor} hoverSrc={tripAdvisorHover} alt="tripAdvisor" />
+              <a
+                href="https://www.tripadvisor.ru/Attraction_Review-g293948-d12370417-Reviews-Song_Kol_Travel-Bishkek.html"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Icon
+                  className="w-[40px] h-[40px]"
+                  src={tripAdvisor}
+                  hoverSrc={tripAdvisorHover}
+                  alt="tripAdvisor"
+                />
               </a>
             </li>
             <li>
-              <a href="" target="_blank" rel="noreferrer">
-                <Icon className="w-[40px] h-[40px]"  src={facebook} hoverSrc={facebookHover} alt="facebook" />
+              <a
+                href="https://www.facebook.com/songkollake/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Icon
+                  className="w-[40px] h-[40px]"
+                  src={facebook}
+                  hoverSrc={facebookHover}
+                  alt="facebook"
+                />
               </a>
             </li>
             <li className=":[&:nth-child(3)]:hover:underline">
-              <a href="" target="_blank" rel="noreferrer">
-                <Icon className="w-[40px] h-[40px]"  src={instagram} hoverSrc={instagramHover} alt="instagram" />
+              <a
+                href="https://www.instagram.com/songkol_travel/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Icon
+                  className="w-[40px] h-[40px]"
+                  src={instagram}
+                  hoverSrc={instagramHover}
+                  alt="instagram"
+                />
               </a>
             </li>
           </ul>
@@ -50,7 +86,12 @@ const Footer: React.FC = () => {
               <h3 className="text-24 mb-[4px] whitespace-nowrap">
                 Phone number, What's App
               </h3>
-              <a className="text-18" href="tel:+996706990087">
+              <a
+                className="text-18"
+                href="https://api.whatsapp.com/send?phone=996706990087"
+                target="_blank"
+                rel="noreferrer"
+              >
                 +996(706) 99-00-87
               </a>
             </li>
@@ -62,13 +103,23 @@ const Footer: React.FC = () => {
             </li>
             <li>
               <h3 className="text-24 mb-[4px] whitespace-nowrap">Instagram</h3>
-              <a className="text-18" href="" target="_blank" rel="noreferrer">
+              <a
+                className="text-18"
+                href="https://www.instagram.com/songkol_travel/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 songkol_travel
               </a>
             </li>
             <li>
               <h3 className="text-24 mb-[4px] whitespace-nowrap">Facebook</h3>
-              <a className="text-18" href="" target="_blank" rel="noreferrer">
+              <a
+                className="text-18"
+                href="https://www.facebook.com/songkollake/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Song-Kol Travel
               </a>
             </li>

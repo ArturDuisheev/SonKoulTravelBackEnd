@@ -10,6 +10,7 @@ import clock from "../../assets/images/tours/clock.svg";
 import person from "../../assets/images/tours/person.svg";
 import price from "../../assets/images/tours/price.svg";
 import calendar from "../../assets/images/tours/calendar.svg";
+import "./styleTour/slider.css"
 
 const Slider: React.FC = () => {
   const { data } = useSelector((state: RootState) => state.tours);
@@ -36,7 +37,7 @@ const Slider: React.FC = () => {
 
   if (data.length)
     return (
-      <section className="h-[720px] relative text-white ldt:h-[calc(100vh+450px)]">
+      <section className="h-[720px] relative text-white ldt:h-[calc(100vh+400px)] ldt:max-h-[930px]">
         {data.map((tour) => (
           <div
             style={{
@@ -47,7 +48,7 @@ const Slider: React.FC = () => {
             key={tour.id}
           ></div>
         ))}
-        <div className="absolute top-[265px] left-0 w-full z-[100] h-full ldt:top-0 ldt:pb-80">
+        <div className="absolute top-[265px] left-0 w-full z-[100] h-[calc(100%_-_265px)] ldt:h-full ldt:top-0 ldt:pb-80">
           <div className="h-full container flex justify-between gap-[30px] ldt:flex-col ldt:items-center">
             <div className="relative flex-[0_0_625px] z-10 ldt:flex-[1_1_200px] ldt:flex ldt:items-center">
               {data
@@ -118,7 +119,7 @@ const Slider: React.FC = () => {
                         backgroundImage: `url(http://${tour.images[0]}`,
                         // opacity: isVisible ? 1 : 0,
                       }}
-                      className="rounded-[8px] p-10 w-full h-[235px] flex flex-col justify-end bg-cover bg-no-repeat bg-center shadow-[inset_0_0_100px_12px_rgba(0,0,0,0.50)] animate-def slt:h-[170px]"
+                      className="rounded-[8px] sliderSnadow p-10 w-full h-[235px] flex flex-col justify-end bg-cover bg-no-repeat  bg-center animate-def slt:h-[170px]"
                     >
                       <h3 className="mb-10 text-16 leading-[18px] font-normal">
                         {tour.name}

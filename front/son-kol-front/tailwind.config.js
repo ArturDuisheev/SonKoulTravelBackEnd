@@ -57,8 +57,8 @@ export default {
       blue: "#1A9DD0",
       gray: "#F6F7F7",
       darkGray: "#D2DEE3",
-      inherit: "inherit"
-    },
+      inherit: "inherit",
+      },
     fontSize: {
       14: "14px",
       16: "16px",

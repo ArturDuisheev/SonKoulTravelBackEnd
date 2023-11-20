@@ -45,7 +45,7 @@ interface IReviewForm {
   stars: number;
   text: string;
   photos: File[];
-  tour: String;
+  tour: number;
 }
 
 export const sendReview = createAsyncThunk<

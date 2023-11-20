@@ -174,7 +174,7 @@ const Form: React.FC<FomrProps> = ({
                   </h3>
                   <input
                     className={`inp ${email.errorMsg ? "error" : ""}`}
-                    type="email"
+                    type="text"
                     value={email.value}
                     onChange={email.onChange}
                     onBlur={email.onBlur}

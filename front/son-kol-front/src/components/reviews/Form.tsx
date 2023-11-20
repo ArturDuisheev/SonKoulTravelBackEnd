@@ -117,6 +117,7 @@ const Form: React.FC = () => {
         stars: stars,
         text: description.value,
         photos: imageFiles,
+        // @ts-ignore
         tour: feedBack.value,
       })
     );

@@ -89,23 +89,59 @@ const Header: React.FC = () => {
           </ul>
           <ul className="flex items-center gap-[20px] slt:gap-[10px]">
             <li>
-              <a href="" target="_blank" rel="noreferrer">
-                <Icon className="w-[40px] h-[40px]" src={whatsapp} hoverSrc={hoverWhatsapp} alt="whatsapp" />
+              <a
+                href="https://api.whatsapp.com/send?phone=996706990087"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Icon
+                  className="w-[40px] h-[40px]"
+                  src={whatsapp}
+                  hoverSrc={hoverWhatsapp}
+                  alt="whatsapp"
+                />
               </a>
             </li>
             <li>
-              <a href="" target="_blank" rel="noreferrer">
-                <Icon className="w-[40px] h-[40px]" src={tripAdvisor} hoverSrc={tripAdvisorHover} alt="tripAdvisor" />
+              <a
+                href="https://www.tripadvisor.ru/Attraction_Review-g293948-d12370417-Reviews-Song_Kol_Travel-Bishkek.html"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Icon
+                  className="w-[40px] h-[40px]"
+                  src={tripAdvisor}
+                  hoverSrc={tripAdvisorHover}
+                  alt="tripAdvisor"
+                />
               </a>
             </li>
             <li>
-              <a href="" target="_blank" rel="noreferrer">
-                <Icon className="w-[40px] h-[40px]" src={facebook} hoverSrc={facebookHover} alt="facebook" />
+              <a
+                href="https://www.facebook.com/songkollake/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Icon
+                  className="w-[40px] h-[40px]"
+                  src={facebook}
+                  hoverSrc={facebookHover}
+                  alt="facebook"
+                />
               </a>
             </li>
             <li>
-              <a href="https://instagram.com/songkol_travel?igshid=NTc4MTIwNjQ2YQ==" target="_blank" rel="noreferrer">
-                <Icon className="w-[40px] h-[40px]" src={instagram} hoverSrc={instagramHover} alt="instagram" />
+              <a
+                href="https://www.instagram.com/songkol_travel/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Icon
+                  className="w-[40px] h-[40px]"
+                  src={instagram}
+                  hoverSrc={instagramHover}
+                  alt="instagram"
+                />
               </a>
             </li>
           </ul>

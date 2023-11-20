@@ -46,7 +46,7 @@ const Accordeon: React.FC<AccordeonProps> = ({
       >
         {title}
         {isArrow && (
-          <div>
+          <div className="flex-shrink-0">
             <img
               className={`animate-def ${
                 isActive || isOpen ? "rotate-90" : "rotate-0"

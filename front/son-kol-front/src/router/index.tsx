@@ -1,13 +1,13 @@
 import FAQ from "../pages/FAQ";
 import Tour from "../pages/Tour";
-import Tours from "../pages/tours";
-import BlogNews from "../pages/blogNews";
-import Reviews from "../pages/reviews";
-import Transport from "../pages/transport";
+import Tours from "../pages/Tours";
+import BlogNews from "../pages/BlogNews";
+import Reviews from "../pages/Reviews";
+import Transport from "../pages/Transport";
 import Blog from "../pages/Blog";
 import NotFoundPage from "../pages/NotFoundPage";
 import News from "../pages/News";
-import MainPage from "../pages/mainPage";
+import MainPage from "../pages/MainPage";
 
 export const router = [
   { key: 1, path: "/", element: <MainPage /> },

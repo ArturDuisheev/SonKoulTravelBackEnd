@@ -61,10 +61,10 @@ const Program: React.FC = () => {
               key={key}
               title={
                 <div className="flex items-center gap-[20px] mbl:gap-[5px]">
-                  <span className="flex justify-center items-center w-[80px] h-[80px] rounded-[50%] bg-blue font-medium text-white tb:w-[60px] tb:h-[60px] tb:text-[16px] tb:font-normal">
+                  <span className="flex justify-center items-center w-[80px] h-[80px] flex-shrink-0 rounded-[50%] bg-blue font-medium text-white tb:w-[60px] tb:h-[60px] tb:text-[16px] tb:font-normal">
                     Day {program.day}
                   </span>
-                  <h3 className=" text-[24px] leading-[28px] font-normal whitespace-nowrap tb:text-[20px] tb:leading-[23px] smbl:text-[18px]">
+                  <h3 className=" text-[24px] text-start leading-[28px] font-normal tb:text-[20px] tb:leading-[23px] smbl:text-[18px]">
                     {program.name}
                   </h3>
                 </div>

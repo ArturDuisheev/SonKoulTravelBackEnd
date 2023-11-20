@@ -154,7 +154,7 @@ class TourProgramViewSet(viewsets.ModelViewSet):
 
         ]
         queryset = TourAdd.objects.get(
-            id = request.query_params.get('tour')
+            id=request.GET.get('tour')
         )
         try:
             for i in queryset.tour_program.all():

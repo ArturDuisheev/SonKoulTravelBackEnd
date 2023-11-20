@@ -68,7 +68,15 @@ const Questions: React.FC = () => {
                 </span>
               }
             >
-              <p className="pl-20">{question.answer}</p>
+              <p className="pl-20">
+                {question.answer.split("*ENTER*").map((text, key) => (
+                  <span key={key}>
+                    {key > 0 && <br />}
+                    {text}
+                    <br />
+                  </span>
+                ))}
+              </p>
             </Accordeon>
           ))}
         </div>

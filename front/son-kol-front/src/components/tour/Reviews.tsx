@@ -8,6 +8,7 @@ import star from "../../assets/images/common/star.svg";
 import starActive from "../../assets/images/common/star-active.svg";
 import Text from "../ui/Text";
 import { API_URL } from "../../http";
+import { months } from "../../uttilities";
 
 const Reviews: React.FC = () => {
   const { data } = useSelector((state: RootState) => state.tour);
@@ -64,7 +65,7 @@ const Reviews: React.FC = () => {
               </div>
               <ul className="mt-10 mb-20 flex justify-between gap-[10px]">
                 {review.photos
-                  .slice(0, isLDT ? 1 : review.photos.length)
+                  .slice(0, isLDT ? 1 : 2)
                   .map((image, key) => (
                     <li
                       className="w-full h-[215px] ldt:h-[305px] nlt:max-w-[690px] nlt:h-[480px] tb:max-w-[440px] tb:h-[305px] nmbl:max-w-[300px] nmbl:h-[200px]"
@@ -79,7 +80,7 @@ const Reviews: React.FC = () => {
                   ))}
               </ul>
               <span className="block text-end text-grayLight text-[14px] leading-[16px]">
-                {review.date.month}, {review.date.year}
+                {months[review.date.month - 1]} {review.date.day}, {review.date.year}
               </span>
             </li>
           ))

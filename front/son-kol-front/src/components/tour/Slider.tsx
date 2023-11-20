@@ -11,6 +11,7 @@ import calendar from "../../assets/images/tours/calendar.svg";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import "swiper/css";
+import "./style.css"
 
 const Slider: React.FC = () => {
   const { data } = useSelector((store: RootState) => store.tour);
@@ -56,7 +57,7 @@ const Slider: React.FC = () => {
               style={{
                 backgroundImage: `url(http://${image})`,
               }}
-              className="w-full min-h-[600px] bg-center bg-no-repeat bg-cover"
+              className="w-full sliderSnadow min-h-[600px] bg-center bg-no-repeat bg-cover"
             ></div>
           </SwiperSlide>
         ))}

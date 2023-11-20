@@ -18,7 +18,8 @@ class TourAddSerializer(serializers.ModelSerializer):
         model = TourAdd
         fields = (
             'id', 'name', 'tour_time', 'number_of_people', 'price', 'type', 'description', 'when_is_tour',
-            'tour_program')
+            'tour_program'
+        )
 
     def to_representation(self, instance):
         host = self.context.get('request').get_host() if self.context.get('request') else ''
