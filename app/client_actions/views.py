@@ -1,6 +1,9 @@
 import os
 import requests
-from gunicorn.config import User
+try:
+    from gunicorn.config import User
+except ModuleNotFoundError:
+    User = None
 
 from rest_framework import viewsets, status, permissions
 from rest_framework.decorators import action

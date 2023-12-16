@@ -149,26 +149,30 @@ class TourProgramViewSet(viewsets.ModelViewSet):
     serializer_class = TourProgramSerializer
     permission_classes = [IsSuperuser | permissions.IsAuthenticatedOrReadOnly]
 
-    def list(self, request, *args, **kwargs):
-        list_1 = [
+    # def list(self, request, *args, **kwargs):
+    #     list_1 = []
+    #     queryset = TourAdd.objects.get(
+    #         id=request.GET.get('tour')
+    #     )
+    #     for i in queryset.tour_program.all():
+    #         for n in i.day_list.all():
+    #             list_1.append(n)
+    #     serializer = TourProgramDaySerializer(data=list_1, many=True)
+    #     return Response(serializer.data, status=status.HTTP_200_OK)
 
-        ]
-        queryset = TourAdd.objects.get(
+    def list(self, request, *args, **kwargs):
+        queryset = TourProgram.objects.get(
             id=request.GET.get('tour')
         )
-        try:
+        serializer = TourProgramDaySerializer(queryset, many=True)
+        if serializer.is_valid(raise_exception=True):
+            list_1 = []
             for i in queryset.tour_program.all():
                 for n in i.day_list.all():
                     list_1.append(n)
-            serializer = TourProgramDaySerializer(data=list_1, many=True)
-            return Response(serializer.data, status=status.HTTP_200_OK)
+                    return Response(serializer.data, status=status.HTTP_200_OK)
+                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-        except Exception as e:
-            errors = {
-                "message": str(e),
-                "data": list_1
-            }
-            return Response(errors, status=status.HTTP_400_BAD_REQUEST)
 
     def create(self, request):
         tour_id = request.data.get('tour')
